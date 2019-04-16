@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: Rauthy
-Build-Jdk: 1.8.0_181
-Main-Class: com.yourProjectPackage.YourEntranceClass
-Created-By: Maven Integration for Eclipse
-
