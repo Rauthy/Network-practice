@@ -1,3 +1,5 @@
+package com.network.project.ui.src;
+
 import javax.swing.*;
 
 public class panel_1 {
