@@ -10,7 +10,8 @@ public class User {
     private String password;
     private String smtp;
     private String pop3;
-//    private int role; //0普通用户，1管理员
+    //    private int role; //0普通用户，1管理员
+    private boolean isValid;//1可用 0失效，默认为1
 
     private List<Mail> inbox;//收件箱
     private List<Mail> inbox_unread;//收件箱未读邮件
@@ -77,6 +78,14 @@ public class User {
 //    public void setRole(int role) {
 //        this.role = role;
 //    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
+    public void setValid(boolean valid) {
+        isValid = valid;
+    }
 
     public List<Mail> getInbox() {
         return inbox;

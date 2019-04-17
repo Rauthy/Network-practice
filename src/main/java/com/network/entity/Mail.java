@@ -4,7 +4,8 @@ import java.util.Date;
 
 public class Mail {
 
-    private int mid;
+    private int mid;//按邮件加载顺序排列，0,1,...,n
+    private String mail_unique;//UIDL获取的邮件唯一标识
     private int uid;
     private String to;//收件人地址
     private String from;//发件人地址
@@ -22,6 +23,14 @@ public class Mail {
 
     public void setMid(int mid) {
         this.mid = mid;
+    }
+
+    public String getMail_unique() {
+        return mail_unique;
+    }
+
+    public void setMail_unique(String mail_unique) {
+        this.mail_unique = mail_unique;
     }
 
     public int getUid() {
