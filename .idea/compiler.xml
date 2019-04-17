@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mail" />
+        <module name="Network-practice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mail" target="1.8" />
+      <module name="Network-practice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
