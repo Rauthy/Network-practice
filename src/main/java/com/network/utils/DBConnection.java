@@ -1,4 +1,4 @@
-package com.network.DBUtils;
+package com.network.utils;
 
 import java.sql.Connection;
 import java.sql.SQLException;
