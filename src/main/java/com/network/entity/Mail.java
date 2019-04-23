@@ -2,6 +2,8 @@ package com.network.entity;
 
 import java.util.Date;
 
+//读取邮件写入数据库
+
 public class Mail {
 
     private int mid;//按邮件加载顺序排列，0,1,...,n
@@ -12,10 +14,11 @@ public class Mail {
     private String subject;
     private String content;
     private Date stime;
+
     private boolean isDel;//1回收站 0原位
     private boolean isReceive;//1收件 0发件
     private boolean isRead;//1收件箱已读 0收件箱未读
-    private int sendCond;//0发送失败，草稿箱 1发送成功，已发送 2正在发送，发件箱
+    private int sendCond;//0未发送，草稿箱 1发送成功，已发送 2正在发送/发送失败，发件箱
 
     public int getMid() {
         return mid;

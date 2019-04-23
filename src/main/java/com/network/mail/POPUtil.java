@@ -43,16 +43,23 @@ public class POPUtil {
     
     //我用的是网易邮箱，这里的密码指的是授权码
     public boolean login(String name, String password) {
-        sendCommand("user "+name);
-        if(!socketReader.nextLine().startsWith("+OK")) {
-            System.out.println("Wrong username");
+        try{
+            sendCommand("user "+name);
+            if(!socketReader.nextLine().startsWith("+OK")) {
+                System.out.println("Wrong username");
+            }
+            sendCommand("pass "+password);
+            if(!socketReader.nextLine().startsWith("+OK")) {
+                System.out.println("Wrong password");
+            }
+//        System.out.println("login successfully");
+            return true;
         }
-        sendCommand("pass "+password);
-        if(!socketReader.nextLine().startsWith("+OK")) {
-            System.out.println("Wrong password");
+        catch (Exception e){
+            e.printStackTrace();
+            return false;
         }
-        System.out.println("login successfully");
-        return true;
+
     }
     //返回邮件数量
     public int getMailNum() {

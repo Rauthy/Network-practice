@@ -10,14 +10,13 @@ drop table IF EXISTS users;
 create table users(
 	uid int(10) not null primary key  AUTO_INCREMENT,
 	username varchar(64) not null,
-	email varchar(128) not null,
 	password varchar(64) not null,
 	smtp varchar(128) not null,
 	pop3 varchar(128) not null,
 	isvalid int(2) default 1
 	)ENGINE=InnoDB AUTO_INCREMENT=2;
 
-insert into users(uid, username, email,password,smtp,pop3,isvalid)values(1,'13197389627','13197389627@163.com','Wc123456789','smtp.163.com','pop.163.com',1);
+insert into users(uid, username,password,smtp,pop3,isvalid)values(1,'13197389627','Wc123456789','smtp.163.com','pop.163.com',1);
 
 select * from users;
 
