@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7a75bf-914e-47fa-be6c-61ed7e64a8c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.network.project/mail/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.network.project/mail/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/DBUtils/DBConfig.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/GUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/Guitest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/Guitest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_1.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_2.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_draft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_draft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +56,10 @@
       <file leaf-file-name="Mail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
+            <state relative-caret-position="3255">
               <caret line="234" column="70" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5526#5532#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +68,7 @@
       <file leaf-file-name="mailclient.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="630">
               <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
             </state>
           </provider>
@@ -54,25 +77,23 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="662" column="31" lean-forward="true" selection-start-line="662" selection-start-column="24" selection-end-line="662" selection-end-column="31" />
+            <state relative-caret-position="228">
+              <caret line="664" selection-start-line="664" selection-end-line="674" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6186#6192#0" expanded="true" />
-                <element signature="e#7521#7527#0" expanded="true" />
-                <element signature="e#8853#8859#0" expanded="true" />
-                <element signature="e#10175#10181#0" expanded="true" />
-                <element signature="e#11501#11507#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="-863">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,13 +113,13 @@
       <file leaf-file-name="SQLError.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3930">
-              <caret line="287" selection-start-line="287" selection-end-line="287" />
+            <state relative-caret-position="14910">
+              <caret line="994" selection-start-line="994" selection-end-line="994" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SMTPUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SMTPUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -111,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
-              <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+              <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -166,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" />
       </list>
     </option>
   </component>
@@ -179,6 +201,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="45" />
     <option name="y" value="23" />
     <option name="width" value="1428" />
     <option name="height" value="864" />
@@ -235,8 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,7 +342,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,7 +378,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SMTPUtil">
+  <component name="RunManager" selected="Application.login">
     <configuration name="Guitest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.network.ui.Guitest" />
       <module name="Network-practice" />
@@ -461,9 +484,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.login" />
         <item itemvalue="Application.SMTPUtil" />
         <item itemvalue="Application.POPUtil (1)" />
-        <item itemvalue="Application.login" />
         <item itemvalue="Application.Guitest (1)" />
         <item itemvalue="Application.User" />
       </list>
@@ -486,6 +509,7 @@
       <workItem from="1555464835887" duration="7740000" />
       <workItem from="1555999760733" duration="7638000" />
       <workItem from="1556070586100" duration="8333000" />
+      <workItem from="1556081971757" duration="1509000" />
     </task>
     <servers />
   </component>
@@ -495,10 +519,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27625000" />
+    <option name="totallyTimeSpent" value="29134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1428" height="864" extended-state="0" />
+    <frame x="45" y="23" width="1428" height="864" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -507,28 +531,28 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3382353" side_tool="true" visible="true" weight="0.22685789" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501443" side_tool="true" weight="0.39895698" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.66089463" visible="true" weight="0.22685789" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6617647" visible="true" weight="0.22685789" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21717171" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.498557" weight="0.39895698" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49915966" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,20 +563,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.form">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConfig.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -567,9 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.form">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -659,28 +673,10 @@
     <entry file="file://$PROJECT_DIR$/target/classes/com/network/project/mail/SMTPUtil.class" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/com/network/project/mail/AppTest.class" />
     <entry file="file://$PROJECT_DIR$/src/com/network/main/mail/Base64Util.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.form">
-      <provider editor-type-id="ui-designer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.form">
-      <provider editor-type-id="ui-designer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.form" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.form" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/Reader.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/network/mail/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -705,21 +701,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/src/panel_1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/src/panel_2.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="340" selection-start-line="340" selection-end-line="340" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Properties.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConfig.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -742,8 +729,8 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3930">
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
+        <state relative-caret-position="14910">
+          <caret line="994" selection-start-line="994" selection-end-line="994" />
         </state>
       </provider>
     </entry>
@@ -759,7 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="630">
           <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
@@ -771,52 +758,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/Guitest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/Guitest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
+        <state relative-caret-position="3255">
           <caret line="234" column="70" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5526#5532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="662" column="31" lean-forward="true" selection-start-line="662" selection-start-column="24" selection-end-line="662" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6186#6192#0" expanded="true" />
-            <element signature="e#7521#7527#0" expanded="true" />
-            <element signature="e#8853#8859#0" expanded="true" />
-            <element signature="e#10175#10181#0" expanded="true" />
-            <element signature="e#11501#11507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,6 +773,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="664" selection-start-line="664" selection-end-line="674" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-863">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

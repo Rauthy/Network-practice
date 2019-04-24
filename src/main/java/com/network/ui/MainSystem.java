@@ -8,15 +8,29 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-public class MainSystem {
+public class MainSystem extends JFrame{
+    public JPanel getPanel1() {
+        return panel1;
+    }
+
     private JPanel panel1;
     private JList selection_board;
     private JButton btn_quit;
     private JTable table_maillist;
     private JButton btn_compose;
     private JLabel label_username;
+    private String username;
+    private String smtp_server;
+    private String pop3_server;
 
-    public MainSystem() {
+    public MainSystem(String username,String smtp_server,String pop3_server){
+
+        this.username = username;
+        this.smtp_server = smtp_server;
+        this.pop3_server = pop3_server;
+
+        label_username.setText(username);
+
         //退出
         btn_quit.addActionListener(new ActionListener() {
             @Override
@@ -61,4 +75,16 @@ public class MainSystem {
     public void loadTables(int index){
 
     }
+
+//    public static void main(String[] args){
+////         MainSystem newSystem = new MainSystem("Cai","smtp.qq.com","pop3.qq.com");
+////         newSystem.setVisible(true);
+////        JFrame frame = new JFrame("Main");
+////        frame.setContentPane(new MainSystem("Cai","smtp.qq.com","pop3.qq.com").panel1);
+////        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+////        frame.pack();
+////        frame.setSize(800,600);
+////        frame.setVisible(true);
+//    }
+
 }

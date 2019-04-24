@@ -2,6 +2,8 @@ package com.network.ui;
 /**
  * Created by caihongyang on 2019/4/16.
  */
+import com.network.entity.User;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,27 +45,53 @@ public class login {
         pop3Add.setBounds(150, 150, 165, 25);
         mypanel.add(pop3Add);
 
+
         JButton login = new JButton("Log in");
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(userName.getText().isEmpty()){
+                String username = userName.getText();
+                String password = String.valueOf(pwContent.getPassword());
+                String smtp_server = smtpAdd.getText();
+                String pop3_server = pop3Add.getText();
+
+                if(username.isEmpty()){
                     JOptionPane.showConfirmDialog(mypanel,"Please input your user name!","Warning",JOptionPane.WARNING_MESSAGE);
-                    //System.out.println("缺少用户名！");
                     return;
                 }
 
-                if(pwContent.getPassword().length == 0){
+                if(password.isEmpty()){
                     JOptionPane.showConfirmDialog(mypanel,"Please input your password!","Warning",JOptionPane.WARNING_MESSAGE);
-                    //System.out.println("缺少密码！");
+                    return;
+
+                }
+
+                if(smtp_server.isEmpty() || pop3_server.isEmpty()) {
+                    JOptionPane.showConfirmDialog(mypanel, "Please input at least one server address!", "Warning", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
 
-                if(smtpAdd.getText().isEmpty() || pop3Add.getText().isEmpty()) {
-                    JOptionPane.showConfirmDialog(mypanel, "Please input at least one server address!", "Warning", JOptionPane.WARNING_MESSAGE);
-                    //System.out.println("缺少地址！");
-                    return;
+
+                User u = new User();
+                if(u.isLocalUser(username)){
+                    System.out.println("local user");
+                    if(u.userVerify(username,password)){
+                        System.out.println("local user login successfully");
+                        JFrame frame = new JFrame("Main");
+                        frame.setContentPane(new MainSystem(username,smtp_server,pop3_server).getPanel1());
+                        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                        frame.pack();
+                        frame.setSize(800,600);
+                        frame.setVisible(true);
+                    }else{
+                        System.out.println("local user wrong password");
+                    }
+                }else{
+                    System.out.println("new user");
+                    System.out.println(u.addLocalUser(username,password,pop3_server,smtp_server));
                 }
+
+
             }
         });
 
@@ -71,10 +99,13 @@ public class login {
         mypanel.add(login);
     }
 
+
+
+
         public static void main(String[] args){
             JFrame frame = new JFrame("LOG IN");
             frame.setSize(400,300);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
             JPanel panel = new JPanel();
             manageComponents(panel);
@@ -82,6 +113,6 @@ public class login {
             frame.setVisible(true);
     }
 
-    }
+}
 
 

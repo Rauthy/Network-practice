@@ -55,4 +55,8 @@ public class form_draft {
             }
         });
     }
+
+    public static void main(String[] args){
+        form_draft newDraft = new form_draft();
+    }
 }
