@@ -11,12 +11,12 @@ public class User {
 
     private int uid;
     private String username;
-//    private String email;
+    //    private String email;
     private String password;
     private String smtp;
     private String pop3;
     //    private int role; //0普通用户，1管理员
-    private boolean isValid;//1可用 0失效，默认为1
+    private boolean isValid;//true可用 false失效，默认为true
 
     private List<Mail> inbox;//收件箱
     private List<Mail> inbox_unread;//收件箱未读邮件
@@ -25,67 +25,33 @@ public class User {
     private List<Mail> outbox;//发件箱
     private List<Mail> trash;//回收站
 
-
     public User(){}
-
-    public int getUid() {
-        return uid;
+    public User(String name, String passwd, String smtp, String pop3){
+        this.username = name;
+        this.password = passwd;
+        this.smtp = smtp;
+        this.pop3 = pop3;
+        this.isValid = true;
     }
 
     public void setUid(int uid) {
         this.uid = uid;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
     public void setUsername(String username) {
         this.username = username;
-    }
-//
-//    public String getEmail() {
-//        return email;
-//    }
-//
-//    public void setEmail(String email) {
-//        this.email = email;
-//    }
-
-    public String getPassword() {
-        return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getSmtp() {
-        return smtp;
-    }
-
     public void setSmtp(String smtp) {
         this.smtp = smtp;
     }
 
-    public String getPop3() {
-        return pop3;
-    }
-
     public void setPop3(String pop3) {
         this.pop3 = pop3;
-    }
-
-//    public int getRole() {
-//        return role;
-//    }
-//
-//    public void setRole(int role) {
-//        this.role = role;
-//    }
-
-    public boolean isValid() {
-        return isValid;
     }
 
     public void setValid(boolean valid) {
@@ -222,8 +188,232 @@ public class User {
         }
     }
 
+    public List<User> getAllUser() {
+        Connection conn = DBConnection.getConnection();
+        List<User> list = new ArrayList<>();
+        String sql = "SELECT uid,username,password,smtp,pop3,isvalid FROM users";
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                User u = new User();
+                u.setUid(rs.getInt("uid"));
+                u.setUsername(rs.getString("username"));
+                u.setPassword(rs.getString("password"));
+                u.setSmtp(rs.getString("smtp"));
+                u.setPop3(rs.getString("pop3"));
+                u.setValid(rs.getBoolean("isvalid"));
+                list.add(u);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return list;
+    }
+
+    public List<Mail> getMyInboxMail(int id){
+        List<Mail> inbox = new ArrayList<Mail>();
+        Connection conn = DBConnection.getConnection();
+        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+                "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
+                "WHERE uid = '" + id + "' AND isreceive=1 AND isdel=0 AND sendcond=-1";
+        Statement state = null;
+        ResultSet rs = null;
+        try {
+            state = conn.createStatement();
+            rs = state.executeQuery(sql);
+            while (rs.next()) {
+                Mail m = new Mail();
+                m.setTo(rs.getString("toaddr"));
+                m.setFrom(rs.getString("fromaddr"));
+                m.setSubject(rs.getString("subject"));
+                m.setContent(rs.getString("content"));
+                m.setStime(rs.getDate("stime"));
+                inbox.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (state != null)
+                    state.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return inbox;
+    }
+
+    public List<Mail> getMyOutboxMail(int id){
+        List<Mail> outbox = new ArrayList<Mail>();
+        Connection conn = DBConnection.getConnection();
+        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+                "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
+                "WHERE uid = '" + id + "' AND isreceive=0 AND isdel=0 AND sendcond=2";
+        Statement state = null;
+        ResultSet rs = null;
+        try {
+            state = conn.createStatement();
+            rs = state.executeQuery(sql);
+            while (rs.next()) {
+                Mail m = new Mail();
+                m.setTo(rs.getString("toaddr"));
+                m.setFrom(rs.getString("fromaddr"));
+                m.setSubject(rs.getString("subject"));
+                m.setContent(rs.getString("content"));
+                m.setStime(rs.getDate("stime"));
+                outbox.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (state != null)
+                    state.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return outbox;
+    }
+
+    public List<Mail> getMySentMail(int id){
+        List<Mail> sent = new ArrayList<Mail>();
+        Connection conn = DBConnection.getConnection();
+        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+                "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
+                "WHERE uid = '" + id + "' AND isreceive=0 AND isdel=0 AND sendcond=1";
+        Statement state = null;
+        ResultSet rs = null;
+        try {
+            state = conn.createStatement();
+            rs = state.executeQuery(sql);
+            while (rs.next()) {
+                Mail m = new Mail();
+                m.setTo(rs.getString("toaddr"));
+                m.setFrom(rs.getString("fromaddr"));
+                m.setSubject(rs.getString("subject"));
+                m.setContent(rs.getString("content"));
+                m.setStime(rs.getDate("stime"));
+                sent.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (state != null)
+                    state.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return sent;
+    }
+
+    public List<Mail> getMyDraftMail(int id){
+        List<Mail> draft = new ArrayList<Mail>();
+        Connection conn = DBConnection.getConnection();
+        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+                "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
+                "WHERE uid = '" + id + "' AND isreceive=0 AND isdel=0 AND sendcond=0";
+        Statement state = null;
+        ResultSet rs = null;
+        try {
+            state = conn.createStatement();
+            rs = state.executeQuery(sql);
+            while (rs.next()) {
+                Mail m = new Mail();
+                m.setTo(rs.getString("toaddr"));
+                m.setFrom(rs.getString("fromaddr"));
+                m.setSubject(rs.getString("subject"));
+                m.setContent(rs.getString("content"));
+                m.setStime(rs.getDate("stime"));
+                draft.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (state != null)
+                    state.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return draft;
+    }
+
+    public List<Mail> getMyTrashMail(int id){
+        List<Mail> trash = new ArrayList<Mail>();
+        Connection conn = DBConnection.getConnection();
+        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+                "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
+                "WHERE uid = '" + id + "' AND isdel=1";
+        Statement state = null;
+        ResultSet rs = null;
+        try {
+            state = conn.createStatement();
+            rs = state.executeQuery(sql);
+            while (rs.next()) {
+                Mail m = new Mail();
+                m.setTo(rs.getString("toaddr"));
+                m.setFrom(rs.getString("fromaddr"));
+                m.setSubject(rs.getString("subject"));
+                m.setContent(rs.getString("content"));
+                m.setStime(rs.getDate("stime"));
+                trash.add(m);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (state != null)
+                    state.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return trash;
+    }
+
     public static void main(String[] args) throws Exception {
         User u = new User();
+
+
+
+
+
+
+
+
+        /**
         String name = "caihongyang316";
         String pass = "qaz1234qaz1234";
         String pop = "pop.126.com";
@@ -239,7 +429,7 @@ public class User {
             System.out.println("new user");
             System.out.println(u.addLocalUser(name,pass,pop,smtp));
         }
-
+        **/
     }
 
 

@@ -46,7 +46,7 @@ create table user_mail(
 	foreign key(mid)references mails(mid),
 	foreign key(uid)references users(uid));
 
-insert into user_mail(mid,uid,isdel,isreceive,isread,sendcond)values(1,1,0,1,0,0);
+insert into user_mail(mid,uid,isdel,isreceive,isread,sendcond)values(1,1,0,1,0,-1);
 
 select * from user_mail;
 
