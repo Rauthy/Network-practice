@@ -193,7 +193,6 @@ public class Mail {
         }
     }
 
-
     public List<Mail> getAllMail() {
         Connection conn = DBConnection.getConnection();
         List<Mail> list = new ArrayList<Mail>();
@@ -229,9 +228,10 @@ public class Mail {
         return list;
     }
 
-    public int writeMail(String inputTo, String inputFrom, String inputSubject, String inputContent, Date inputDate){
+    //写新邮件，返回mailid
+    public int writeNewMail(String inputTo, String inputFrom, String inputSubject, String inputContent, java.util.Date inputDate){
         Connection conn = DBConnection.getConnection();
-        int i = 0;
+        int mailid = 0;
         java.sql.Date sqlDate = new java.sql.Date(inputDate.getTime());
         String sql = "INSERT INTO mails(toaddr,fromaddr,subject,content,stime)values(?,?,?,?,?);";
         String sql2 = "SELECT mid FROM mails WHERE toaddr = '"+inputTo+"' AND fromaddr = '"+inputFrom+"';";
@@ -250,7 +250,7 @@ public class Mail {
             pstmt2 = conn.prepareStatement(sql2);
             rs = pstmt2.executeQuery();
             if(rs.next()){
-                i = rs.getInt("mid");
+                mailid = rs.getInt("mid");
             }
         }catch (SQLException e){
             e.printStackTrace();
@@ -268,37 +268,7 @@ public class Mail {
             } catch (SQLException e) {
             }
         }
-        return i;
+        return mailid;
     }
-
-    public int deleteMailTotally(int mailid){
-        Connection conn = DBConnection.getConnection();
-        String sql = "DELETE FROM mails WHERE mid='"+mailid+"' ";
-        int i = 0;
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-        try{
-            pstmt = conn.prepareStatement(sql);
-            i=pstmt.executeUpdate();
-            System.out.println(i);
-            conn.commit();
-        }catch (SQLException e){
-            e.printStackTrace();
-
-        }
-        finally {
-            try {
-                if (conn != null)
-                    conn.close();
-                if (pstmt != null)
-                    pstmt.close();
-                if (rs != null)
-                    rs.close();
-            } catch (SQLException e) {
-            }
-        }
-        return i;
-    }
-
 
 }

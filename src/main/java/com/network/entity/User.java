@@ -2,8 +2,8 @@ package com.network.entity;
 
 import com.network.utils.DBConnection;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.Date;
 
 public class User {
 
@@ -11,6 +11,7 @@ public class User {
 
     private int uid;
     private String username;
+
     //    private String email;
     private String password;
     private String smtp;
@@ -32,6 +33,30 @@ public class User {
         this.smtp = smtp;
         this.pop3 = pop3;
         this.isValid = true;
+    }
+
+    public int getUid() {
+        return uid;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getSmtp() {
+        return smtp;
+    }
+
+    public String getPop3() {
+        return pop3;
+    }
+
+    public boolean isValid() {
+        return isValid;
     }
 
     public void setUid(int uid) {
@@ -402,7 +427,7 @@ public class User {
         }
         return trash;
     }
-    
+
 
     public int receiveNewMail(int mailid,int userid){
         Connection conn = DBConnection.getConnection();
@@ -457,6 +482,8 @@ public class User {
         }
         return i;
     }
+
+
 
     //草稿箱
     public int writeMyMail(int mailid,int userid){
@@ -564,22 +591,77 @@ public class User {
         return i;
     }
 
+    //从回收站恢复邮件
+    public int restoreTrashMail(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        int i = 0;
+        String sql = "UPDATE user_mail SET isdel=0 WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+    //从回收站彻底删除邮件
+    public int deleteTrashMail(int mailid, int userid){
+        Connection conn = DBConnection.getConnection();
+        String sql1 = "DELETE FROM user_mail WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        String sql2 = "DELETE FROM mails WHERE mid='"+mailid+"';";
+        int i = 0;
+        PreparedStatement pstmt = null;
+
+        ResultSet rs = null;
+        try{
+            pstmt = conn.prepareStatement(sql1);
+            i=pstmt.executeUpdate();
+            System.out.println(i);
+            pstmt = conn.prepareStatement(sql2);
+            i=pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+
+        }
+        finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+                if (rs != null)
+                    rs.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
 
     public static void main(String[] args) throws Exception {
         User u = new User();
 
 
-
-
-
-
-
-
-        /**
+    /**登录
         String name = "caihongyang316";
         String pass = "qaz1234qaz1234";
         String pop = "pop.126.com";
         String smtp = "smtp.126.com";
+
         if(u.isLocalUser(name)){
             System.out.println("local user");
             if(u.userVerify(name,pass)){
@@ -591,7 +673,15 @@ public class User {
             System.out.println("new user");
             System.out.println(u.addLocalUser(name,pass,pop,smtp));
         }
-        **/
+    **/
+
+    /**新建编写邮件
+        Mail newWrite  = new Mail();
+        int mid = newWrite.writeNewMail("toaddr","fromaddr","subject","content",new Date());
+        u.writeMyMail(mid,u.getUid());
+    **/
+
+
     }
 
 
