@@ -656,7 +656,7 @@ public class User {
         User u = new User();
 
 
-    /**登录
+    //登录
         String name = "caihongyang316";
         String pass = "qaz1234qaz1234";
         String pop = "pop.126.com";
@@ -673,7 +673,6 @@ public class User {
             System.out.println("new user");
             System.out.println(u.addLocalUser(name,pass,pop,smtp));
         }
-    **/
 
     /**新建编写邮件
         Mail newWrite  = new Mail();

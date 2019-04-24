@@ -71,7 +71,6 @@ public class login {
                     return;
                 }
 
-
                 User u = new User();
                 if(u.isLocalUser(username)){
                     System.out.println("local user");
@@ -88,7 +87,12 @@ public class login {
                     }
                 }else{
                     System.out.println("new user");
-                    System.out.println(u.addLocalUser(username,password,pop3_server,smtp_server));
+                    int status = u.addLocalUser(username,password,pop3_server,smtp_server);
+                    if(status<=0){
+                        JOptionPane.showConfirmDialog(mypanel, "Please check your server address!", "Warning", JOptionPane.WARNING_MESSAGE);
+                        return;
+                    }
+
                 }
 
 

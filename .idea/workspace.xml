@@ -3,31 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9f7a75bf-914e-47fa-be6c-61ed7e64a8c3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.network.project/mail/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.network.project/mail/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/DBUtils/DBConfig.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/GUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/Guitest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/Guitest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_1.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/project/ui/src/panel_2.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_draft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_draft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/entity/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +34,7 @@
       <file leaf-file-name="Mail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3255">
+            <state relative-caret-position="3330">
               <caret line="234" column="70" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,8 +55,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="664" selection-start-line="664" selection-end-line="674" selection-end-column="9" />
+            <state relative-caret-position="-652">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,11 +67,32 @@
       <file leaf-file-name="login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-863">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="440">
+              <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -101,8 +100,8 @@
       <file leaf-file-name="LoginVerify.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+            <state relative-caret-position="339">
+              <caret line="73" column="39" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,19 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLError.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14910">
-              <caret line="994" selection-start-line="994" selection-end-line="994" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SMTPUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="1335">
               <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
             </state>
           </provider>
@@ -131,8 +121,8 @@
       <file leaf-file-name="POPUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -184,9 +174,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" />
       </list>
     </option>
@@ -203,7 +193,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="45" />
     <option name="y" value="23" />
-    <option name="width" value="1428" />
+    <option name="width" value="1395" />
     <option name="height" value="864" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -258,7 +248,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,8 +334,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,11 +349,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target/classes/com/network/utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes/com/network/utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -485,10 +475,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.login" />
+        <item itemvalue="Application.User" />
         <item itemvalue="Application.SMTPUtil" />
         <item itemvalue="Application.POPUtil (1)" />
         <item itemvalue="Application.Guitest (1)" />
-        <item itemvalue="Application.User" />
       </list>
     </recent_temporary>
   </component>
@@ -510,6 +500,7 @@
       <workItem from="1555999760733" duration="7638000" />
       <workItem from="1556070586100" duration="8333000" />
       <workItem from="1556081971757" duration="1509000" />
+      <workItem from="1556083626320" duration="682000" />
     </task>
     <servers />
   </component>
@@ -519,10 +510,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29134000" />
+    <option name="totallyTimeSpent" value="29816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="23" width="1428" height="864" extended-state="0" />
+    <frame x="45" y="23" width="1395" height="864" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -539,7 +530,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21717171" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21648745" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -714,40 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14910">
+        <state relative-caret-position="14535">
           <caret line="994" selection-start-line="994" selection-end-line="994" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -761,7 +722,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/Guitest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3255">
+        <state relative-caret-position="3330">
           <caret line="234" column="70" selection-start-line="234" selection-start-column="36" selection-end-line="234" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -771,22 +732,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="1335">
           <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="73" column="39" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="664" selection-start-line="664" selection-end-line="674" selection-end-column="9" />
+        <state relative-caret-position="-652">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -795,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="440">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
