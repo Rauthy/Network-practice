@@ -142,7 +142,7 @@ public class POPUtil {
     
     public static void main(String[] args) throws Exception {
         POPUtil popUtil=new POPUtil("pop.163.com", 110);
-//        popUtil.login("13197389627", "Wc123456789");
+        popUtil.login("13197389627", "Wc123456789");
         System.out.println(popUtil.getMailNum());
         popUtil.getContent(2);
         //popUtil.deleteItem(2);

@@ -83,14 +83,14 @@ public class SMTPUtil {
             smtp_out.print(command + "\r\n");
             smtp_out.flush();
             String res = smtp_in.readLine();
-//            System.out.println("receive ---> " + res);
+            System.out.println("receive ---> " + res);
         }catch(IOException e){
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args)throws Exception{
-           SMTPUtil smtptest = new SMTPUtil("smtp.qq.com",25);
-           smtptest.login("506444834@qq.com","etmsztykjmjzcaif");
+           SMTPUtil smtptest = new SMTPUtil("smtp.126.com",25);
+           smtptest.login("caihongyang316","qaz1234qaz1234");
     }
 }
