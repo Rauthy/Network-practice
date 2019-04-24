@@ -194,7 +194,7 @@ public class Mail {
     }
 
 
-    public List<Mail> getAllRequest() {
+    public List<Mail> getAllMail() {
         Connection conn = DBConnection.getConnection();
         List<Mail> list = new ArrayList<Mail>();
         String sql = "SELECT mid,toaddr,fromaddr,subject,content,stime FROM mails";
@@ -271,7 +271,7 @@ public class Mail {
         return i;
     }
 
-    public int deleteMail(int mailid){
+    public int deleteMailTotally(int mailid){
         Connection conn = DBConnection.getConnection();
         String sql = "DELETE FROM mails WHERE mid='"+mailid+"' ";
         int i = 0;

@@ -402,6 +402,168 @@ public class User {
         }
         return trash;
     }
+    
+
+    public int receiveNewMail(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt1 = null;
+        int i = 0;
+        String sql1 = "INSERT INTO user_mail(mid, uid,isdel,isreceive,isread,sendcond)VALUES(?,?,?,?,?,?);";
+        try{
+            pstmt1 = conn.prepareStatement(sql1);
+
+            pstmt1.setInt(1,mailid);
+            pstmt1.setInt(2,userid);
+            pstmt1.setInt(3,0);
+            pstmt1.setInt(4,1);
+            pstmt1.setInt(5,0);
+            pstmt1.setInt(6,-1);
+            i = pstmt1.executeUpdate();
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt1 != null)
+                    pstmt1.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+    public int readMyMail(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        int i = 0;
+        String sql = "UPDATE user_mail SET isread=1 WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+    //草稿箱
+    public int writeMyMail(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt1 = null;
+        int i = 0;
+        String sql1 = "INSERT INTO user_mail(mid, uid,isdel,isreceive,isread,sendcond)VALUES(?,?,?,?,?,?);";
+        try{
+            pstmt1 = conn.prepareStatement(sql1);
+            pstmt1.setInt(1,mailid);
+            pstmt1.setInt(2,userid);
+            pstmt1.setInt(3,0);
+            pstmt1.setInt(4,0);
+            pstmt1.setInt(5,0);
+            pstmt1.setInt(6,0);
+            i = pstmt1.executeUpdate();
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt1 != null)
+                    pstmt1.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+    //发件箱
+    public int moveMyMailToOutbox(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        int i = 0;
+        String sql = "UPDATE user_mail SET sendcond=1 WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+
+    //已发送
+    public int moveToSent(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        int i = 0;
+        String sql = "UPDATE user_mail SET sendcond=2 WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
+    //回收站
+    public int moveToTrash(int mailid,int userid){
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        int i = 0;
+        String sql = "UPDATE user_mail SET isdel=1 WHERE mid='"+mailid+"' AND uid='"+userid+"';";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println(i);
+            conn.commit();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                if (conn != null)
+                    conn.close();
+                if (pstmt != null)
+                    pstmt.close();
+            } catch (SQLException e) {
+            }
+        }
+        return i;
+    }
+
 
     public static void main(String[] args) throws Exception {
         User u = new User();
