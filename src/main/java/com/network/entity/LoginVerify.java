@@ -42,8 +42,8 @@ public class LoginVerify{
      *     若二者均连接成功，作为新用户添加至本地数据表中
      */
     public boolean popVerify(String name, String passwd, String server, int port)throws Exception{
-        POPUtil popUtil = new POPUtil(server,port);
-        return (popUtil.login(name, passwd));
+        POPUtil popUtil = new POPUtil(server,name,passwd);
+        return (popUtil.login());
     }
 
     public boolean smtpVerify(String name, String passwd, String server, int port)throws Exception{
