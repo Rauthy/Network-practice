@@ -31,8 +31,6 @@ public class form_compose {
     private String username;
     private String smtp;
     private String pop;
-    private Socket smtpSocket;
-    private BufferedReader smtp_in;
 
     public form_compose(String username,String smtp,String pop) {
         this.smtp = smtp;
@@ -45,23 +43,12 @@ public class form_compose {
         frame.setSize(800,600);
         frame.setVisible(true);
 
-        receiver_name.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        subject.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        content_field.addComponentListener(new ComponentAdapter() {
-        });
         btn_addToDraft.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Mail newWrite = new Mail();
+                int mid = newWrite.writeNewMail(receiver_name.getText(), username, subject.getText(), content_field.getText(), new Date());
+                user.writeMyMail(mid, uid);
                 JOptionPane.showMessageDialog(panel1, "已成功移动到草稿箱！", "提示", JOptionPane.PLAIN_MESSAGE);
                 frame.dispose();
                 return;
@@ -69,22 +56,29 @@ public class form_compose {
         });
         btn_send.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e)  {
-                //需要判断是否发送成功
-                Mail newWrite = new Mail();
-                int mid = newWrite.writeNewMail(receiver_name.getText(),username,subject.getText(),content_field.getText(),new Date());
-                user.writeMyMail(mid,uid);
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    //需要判断是否发送成功
+                    Mail newWrite = new Mail();
+                    int mid = newWrite.writeNewMail(receiver_name.getText(), username, subject.getText(), content_field.getText(), new Date());
+                    user.writeMyMail(mid, uid);
+                    user.moveMyMailToOutbox(mid,uid);
 
-//                SMTPUtil nsmtp = new SMTPUtil(smtp,"25");
+                    SMTPUtil nsmtp = new SMTPUtil(smtp, 25);
+                    boolean status = nsmtp.checkSendStatus();
 
-                  if(true){
-                     JOptionPane.showMessageDialog(panel1, "发送成功！", "提示", JOptionPane.PLAIN_MESSAGE);
-                     frame.dispose();
-                     return;}
-                  else{
-                     JOptionPane.showMessageDialog(panel1, "发送失败，已移至草稿箱！", "提示", JOptionPane.PLAIN_MESSAGE);
-                     return;
-                  }
+                    if (status) {
+                        user.moveToSent(mid,uid);
+                        JOptionPane.showMessageDialog(panel1, "发送成功！", "提示", JOptionPane.PLAIN_MESSAGE);
+                        frame.dispose();
+                        return;
+                    } else {
+                        JOptionPane.showMessageDialog(panel1, "发送失败，已移至草稿箱！", "提示", JOptionPane.PLAIN_MESSAGE);
+                        return;
+                    }
+                } catch (Exception ex) {
+                     ex.printStackTrace();
+                }
             }
         });
 

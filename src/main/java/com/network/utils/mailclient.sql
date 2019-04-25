@@ -22,16 +22,14 @@ select * from users;
 
 create table mails(
 	mid int(10) not null primary key AUTO_INCREMENT,
-	umid varchar(32) not null,
 	toaddr varchar(128) not null,
 	fromaddr varchar(128) not null,
 	subject text not null,
 	content longtext not null,
-	stime datetime not null,
-	unique(umid)
+	stime datetime not null
 	)ENGINE=InnoDB AUTO_INCREMENT=2;
 
-insert into mails(mid,umid,toaddr,fromaddr,subject,content,stime)values(1,'uniquecode','13197389627@163.com','sendtest@163.com','testsubject','testcontent','2019-04-16 10:00:17');
+insert into mails(mid,toaddr,fromaddr,subject,content,stime)values(1,'13197389627@163.com','sendtest@163.com','testsubject','testcontent','2019-04-16 10:00:17');
 
 select * from mails;
 
@@ -43,8 +41,8 @@ create table user_mail(
 	isread int(2) default 0,
 	sendcond int(2) default 2,
 	primary key(mid,uid),
-	foreign key(mid)references mails(mid),
-	foreign key(uid)references users(uid));
+	foreign key(mid)references mails(mid) on update cascade,
+	foreign key(uid)references users(uid) on update cascade);
 
 insert into user_mail(mid,uid,isdel,isreceive,isread,sendcond)values(1,1,0,1,0,-1);
 

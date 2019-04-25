@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class SMTPUtil {
+public class SMTPUtil{
 
     //发出地址
     private String name;
@@ -40,16 +40,10 @@ public class SMTPUtil {
         try{
             this.name =addr;
             this.psword=pswd;
-
-
 //            System.out.println("receive ---> " + res);
 
             sendCommand("HELO " + name);
-
             sendCommand(("auth login"));
-
-//            sendCommand(Base64Util.toBase64(name.substring(0, name.indexOf("@"))));
-
             sendCommand(Base64Util.toBase64(name));
             sendCommand(Base64Util.toBase64(psword));
             String res = smtp_in.readLine();
@@ -61,17 +55,14 @@ public class SMTPUtil {
             }
             else
                 return false;
-
-
-
-        }catch(Exception e){
-//            System.out.println("登录失败！");
+            }catch(Exception e){
+            System.out.println("登录失败！");
             return false;
         }
 
     }
 
-    public void sendMailAndGetTime(String subject, String content,String send, String receive){
+    public void sendMail(String subject, String content,String send, String receive){
 
             sendCommand("mail from:<" + send + ">");
             sendCommand("rcpt to:<" + receive + ">");
@@ -82,9 +73,7 @@ public class SMTPUtil {
                     + content + "\r\n"
                     + ".");
             sendCommand(sendContent);
-
-
-    }
+            }
 
     public void sendCommand(String command){
         try {

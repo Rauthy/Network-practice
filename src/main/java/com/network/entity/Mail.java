@@ -13,6 +13,7 @@ public class Mail {
 
 
 
+
     private int mid;//按邮件加载顺序排列，0,1,...,n
     private String mail_unique;//UIDL获取的邮件唯一标识
     private int uid;
@@ -29,6 +30,9 @@ public class Mail {
 
     public Mail(){ }
 
+    public int getMid() {
+        return mid;
+    }
     public void setMid(int mid) {
         this.mid = mid;
     }
@@ -234,7 +238,7 @@ public class Mail {
         int mailid = 0;
         java.sql.Date sqlDate = new java.sql.Date(inputDate.getTime());
         String sql = "INSERT INTO mails(toaddr,fromaddr,subject,content,stime)values(?,?,?,?,?);";
-        String sql2 = "SELECT mid FROM mails WHERE toaddr = '"+inputTo+"' AND fromaddr = '"+inputFrom+"';";
+        String sql2 = "select * from mails order by mid desc limit 0,1;";
         PreparedStatement pstmt = null;
         PreparedStatement pstmt2 = null;
         ResultSet rs = null;

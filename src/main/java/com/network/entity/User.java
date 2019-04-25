@@ -35,28 +35,9 @@ public class User {
         this.isValid = true;
     }
 
-    public int getUid() {
-        return uid;
-    }
 
     public String getUsername() {
         return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getSmtp() {
-        return smtp;
-    }
-
-    public String getPop3() {
-        return pop3;
-    }
-
-    public boolean isValid() {
-        return isValid;
     }
 
     public void setUid(int uid) {
@@ -83,53 +64,6 @@ public class User {
         isValid = valid;
     }
 
-    public List<Mail> getInbox() {
-        return inbox;
-    }
-
-    public void setInbox(List<Mail> inbox) {
-        this.inbox = inbox;
-    }
-
-    public List<Mail> getInbox_unread() {
-        return inbox_unread;
-    }
-
-    public void setInbox_unread(List<Mail> inbox_unread) {
-        this.inbox_unread = inbox_unread;
-    }
-
-    public List<Mail> getSent() {
-        return sent;
-    }
-
-    public void setSent(List<Mail> sent) {
-        this.sent = sent;
-    }
-
-    public List<Mail> getDrafts() {
-        return drafts;
-    }
-
-    public void setDrafts(List<Mail> drafts) {
-        this.drafts = drafts;
-    }
-
-    public List<Mail> getOutbox() {
-        return outbox;
-    }
-
-    public void setOutbox(List<Mail> outbox) {
-        this.outbox = outbox;
-    }
-
-    public List<Mail> getTrash() {
-        return trash;
-    }
-
-    public void setTrash(List<Mail> trash) {
-        this.trash = trash;
-    }
 
     public boolean userVerify(String username, String passwd) {
         try {
@@ -251,7 +185,7 @@ public class User {
     public List<Mail> getMyInboxMail(int id){
         List<Mail> inbox = new ArrayList<Mail>();
         Connection conn = DBConnection.getConnection();
-        String sql = "SELECT toaddr,fromaddr,subject,content,stime " +
+        String sql = "SELECT mid, toaddr,fromaddr,subject,content,stime " +
                 "FROM (user_mail RIGHT JOIN mails ON user_mail.mid=mails.mid)" +
                 "WHERE uid = '" + id + "' AND isreceive=1 AND isdel=0 AND sendcond=-1";
         Statement state = null;
@@ -261,6 +195,7 @@ public class User {
             rs = state.executeQuery(sql);
             while (rs.next()) {
                 Mail m = new Mail();
+                m.setMid(rs.getInt("mid"));
                 m.setTo(rs.getString("toaddr"));
                 m.setFrom(rs.getString("fromaddr"));
                 m.setSubject(rs.getString("subject"));
@@ -656,6 +591,7 @@ public class User {
         User u = new User();
 
 
+
     //登录
         String name = "caihongyang316";
         String pass = "qaz1234qaz1234";
@@ -674,11 +610,12 @@ public class User {
             System.out.println(u.addLocalUser(name,pass,pop,smtp));
         }
 
+
     //新建编写邮件
         Mail newWrite  = new Mail();
         int mid = newWrite.writeNewMail("toaddr","fromaddr","subject","content",new Date());
-        u.writeMyMail(mid,u.getUid());
-
+        System.out.println("mid:"+mid);
+        u.writeMyMail(mid,u.getIdByUsername(name));
 
 
     }
