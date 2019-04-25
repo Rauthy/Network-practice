@@ -41,7 +41,7 @@ public class SMTPUtil {
             this.name =addr;
             this.psword=pswd;
 
-            String res = smtp_in.readLine();
+
 //            System.out.println("receive ---> " + res);
 
             sendCommand("HELO " + name);
@@ -52,7 +52,17 @@ public class SMTPUtil {
 
             sendCommand(Base64Util.toBase64(name));
             sendCommand(Base64Util.toBase64(psword));
-            return true;
+            String res = smtp_in.readLine();
+
+            System.out.println(res);
+            System.out.println(res.substring(0,3).equals("235"));
+            if(res.substring(0,3).equals("235")){
+                return true;
+            }
+            else
+                return false;
+
+
 
         }catch(Exception e){
 //            System.out.println("登录失败！");
@@ -61,21 +71,19 @@ public class SMTPUtil {
 
     }
 
-    public void sendMail(String subject, String content,String send, String receive){
-        try{
+    public void sendMailAndGetTime(String subject, String content,String send, String receive){
+
             sendCommand("mail from:<" + send + ">");
             sendCommand("rcpt to:<" + receive + ">");
             sendCommand("data");
             String sendContent = new String("From:" + send + "\r\n"
-                                                   +"To:" + receive + "\r\n"
-                                                   +"Subject:"+subject + "\r\n" + "\r\n"
-                                                   + content + "\r\n"
-                                                   + ".");
+                    +"To:" + receive + "\r\n"
+                    +"Subject:"+subject + "\r\n" + "\r\n"
+                    + content + "\r\n"
+                    + ".");
             sendCommand(sendContent);
 
-        }catch(Exception e){
 
-        }
     }
 
     public void sendCommand(String command){
@@ -83,10 +91,23 @@ public class SMTPUtil {
             smtp_out.print(command + "\r\n");
             smtp_out.flush();
             String res = smtp_in.readLine();
-            System.out.println("receive ---> " + res);
+//            System.out.println("receive ---> " + res);
         }catch(IOException e){
             e.printStackTrace();
         }
+    }
+
+    public boolean checkSendStatus()throws Exception{
+        try {
+            smtp_in = new BufferedReader(new InputStreamReader(smtpSocket.getInputStream()));
+            String res = smtp_in.readLine();
+            if (res.substring(0, 3).equals("250")) {
+                return true;
+            }
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public static void main(String[] args)throws Exception{

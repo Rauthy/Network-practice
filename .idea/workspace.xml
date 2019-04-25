@@ -3,6 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="9f7a75bf-914e-47fa-be6c-61ed7e64a8c3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_compose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_compose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/mail/SMTPUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/MainSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/form_compose.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/network/ui/login.class" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +56,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf>
       <file leaf-file-name="Base64Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
@@ -47,6 +77,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Mail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="195" selection-start-line="195" selection-end-line="195" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getToAddrById#0;class#Mail#0" />
+                <element signature="method#getFromAddrById#0;class#Mail#0" />
+                <element signature="method#getSubjectById#0;class#Mail#0" />
+                <element signature="method#getContentById#0;class#Mail#0" />
+                <element signature="method#getSTimeById#0;class#Mail#0" />
+                <element signature="method#getAllMail#0;class#Mail#0" />
+                <element signature="method#writeNewMail#0;class#Mail#0" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -54,8 +102,19 @@
       <file leaf-file-name="MainSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="60">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
+            <state relative-caret-position="645">
+              <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+              <folding>
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1372#1373#0" expanded="true" />
+                <element signature="e#1467#1468#0" expanded="true" />
+                <element signature="e#1554#1555#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -97,11 +156,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/network/utils/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.form" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.form" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/network/ui/form_compose.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -115,9 +189,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< Updated upstream
     <option name="x" value="130" />
     <option name="y" value="117" />
     <option name="width" value="1395" />
+=======
+    <option name="x" value="97" />
+    <option name="y" value="28" />
+    <option name="width" value="1428" />
+>>>>>>> Stashed changes
     <option name="height" value="864" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -251,6 +331,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+=======
+              <item name="form_bin" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Network-practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Network-practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
               <item name="form_receive" type="e9f4de52:FormNode" />
             </path>
             <path>
@@ -322,10 +415,72 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+=======
+  <component name="RunManager" selected="Application.form_compose">
+    <configuration name="MainSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.network.ui.MainSystem" />
+      <module name="Network-practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.network.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="SMTPUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.network.mail.SMTPUtil" />
+      <module name="Network-practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.network.mail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.network.entity.User" />
+      <module name="Network-practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.network.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="form_compose" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.network.ui.form_compose" />
+      <module name="Network-practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.network.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.network.ui.login" />
+      <module name="Network-practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.network.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+>>>>>>> Stashed changes
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -364,6 +519,25 @@
       <properties />
       <listeners />
     </configuration>
+<<<<<<< Updated upstream
+=======
+    <list>
+      <item itemvalue="Application.User" />
+      <item itemvalue="Application.login" />
+      <item itemvalue="Application.SMTPUtil" />
+      <item itemvalue="Application.MainSystem" />
+      <item itemvalue="Application.form_compose" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.form_compose" />
+        <item itemvalue="Application.MainSystem" />
+        <item itemvalue="Application.login" />
+        <item itemvalue="Application.SMTPUtil" />
+        <item itemvalue="Application.User" />
+      </list>
+    </recent_temporary>
+>>>>>>> Stashed changes
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -382,10 +556,14 @@
       <workItem from="1555464835887" duration="7740000" />
       <workItem from="1555999760733" duration="7638000" />
       <workItem from="1556070586100" duration="8333000" />
+<<<<<<< Updated upstream
       <workItem from="1556081971757" duration="1509000" />
       <workItem from="1556083626320" duration="801000" />
       <workItem from="1556175361065" duration="273000" />
       <workItem from="1556180386176" duration="663000" />
+=======
+      <workItem from="1556081971757" duration="15042000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -395,6 +573,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="30871000" />
   </component>
   <component name="ToolWindowManager">
@@ -409,13 +588,36 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501443" side_tool="true" weight="0.39895698" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+=======
+    <option name="totallyTimeSpent" value="42667000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="97" y="28" width="1428" height="864" extended-state="0" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32948717" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501443" side_tool="true" weight="0.39895698" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66089463" weight="0.22685789" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66089463" weight="0.11228534" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21625653" />
       <window_info anchor="right" id="Database" order="6" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21717171" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285528" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -427,7 +629,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -468,10 +669,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -480,62 +682,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/src/panel_1.form" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/network/mail/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="140" column="22" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/network/mail/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="140" column="22" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -593,16 +741,37 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/Guitest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/GUI.iml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/src/panel_1.form" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/src/panel_1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/ui/src/panel_2.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Properties.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/com/network/utils/DBConfig.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/Guitest.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="994" selection-start-line="994" selection-end-line="994" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/DBConfig.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -610,6 +779,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/utils/mailclient.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/awt/CGraphicsConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_compose.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_draft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14535">
@@ -646,22 +869,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_bin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_sent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getToAddrById#0;class#Mail#0" />
+            <element signature="method#getFromAddrById#0;class#Mail#0" />
+            <element signature="method#getSubjectById#0;class#Mail#0" />
+            <element signature="method#getContentById#0;class#Mail#0" />
+            <element signature="method#getSTimeById#0;class#Mail#0" />
+            <element signature="method#getAllMail#0;class#Mail#0" />
+            <element signature="method#writeNewMail#0;class#Mail#0" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_compose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3277#3278#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -683,12 +951,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="666" column="29" selection-start-line="666" selection-start-column="29" selection-end-line="666" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1414">
+          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/SMTPUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="100" column="13" lean-forward="true" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/mail/POPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="863">
@@ -700,6 +982,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/entity/LoginVerify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -708,15 +1006,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/form_receive.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="45">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+        <state relative-caret-position="1321">
+          <caret line="680" column="8" selection-start-line="680" selection-start-column="8" selection-end-line="680" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#700#915#0" />
+            <element signature="e#2655#2965#0" />
+            <element signature="e#2971#3864#0" />
+            <element signature="e#3870#4240#0" />
+            <element signature="e#4246#5243#0" />
+            <element signature="e#5249#6454#0" />
+            <element signature="e#6460#7781#0" />
+            <element signature="e#7787#9111#0" />
+            <element signature="e#9117#10433#0" />
+            <element signature="e#10439#11759#0" />
+            <element signature="e#11765#13054#0" />
+            <element signature="e#13061#13999#0" />
+            <element signature="e#14005#14755#0" />
+            <element signature="e#14763#15706#0" />
+            <element signature="e#15712#16482#0" />
+            <element signature="e#16489#17251#0" />
+            <element signature="e#17257#18017#0" />
+            <element signature="e#18023#18793#0" />
+            <element signature="e#18799#19855#0" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/network/ui/MainSystem.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
+        <state relative-caret-position="645">
+          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+          <folding>
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

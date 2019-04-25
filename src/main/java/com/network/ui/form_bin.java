@@ -12,10 +12,18 @@ public class form_bin {
     private JLabel sender_label;
     private JLabel subject_label;
     private JLabel content_label;
+    private JButton btn_resume;
+    private JPanel panel1;
 
 
     public form_bin() {
         btn_fullyDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        btn_resume.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 

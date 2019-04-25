@@ -76,7 +76,8 @@ public class login {
                     System.out.println("local user");
                     if(u.userVerify(username,password)){
                         System.out.println("local user login successfully");
-                        JFrame frame = new JFrame("Main");
+
+                        JFrame frame = new JFrame("邮箱系统");
                         frame.setContentPane(new MainSystem(username,smtp_server,pop3_server).getPanel1());
                         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                         frame.pack();

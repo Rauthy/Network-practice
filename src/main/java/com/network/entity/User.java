@@ -674,11 +674,11 @@ public class User {
             System.out.println(u.addLocalUser(name,pass,pop,smtp));
         }
 
-    /**新建编写邮件
+    //新建编写邮件
         Mail newWrite  = new Mail();
         int mid = newWrite.writeNewMail("toaddr","fromaddr","subject","content",new Date());
         u.writeMyMail(mid,u.getUid());
-    **/
+
 
 
     }
