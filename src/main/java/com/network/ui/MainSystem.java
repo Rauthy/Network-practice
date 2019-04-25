@@ -32,7 +32,7 @@ public class MainSystem {
     private DefaultTableModel model;
     private int uid;
 
-    public MainSystem(String username){
+    public MainSystem(String username,String smtp,String pop){
 
         uid = user.getIdByUsername(username);
 
@@ -68,59 +68,62 @@ public class MainSystem {
             @Override
             public void valueChanged(ListSelectionEvent e){
                 int index = selection_board.getSelectedIndex();
-//                switch (index){
-//                    case 0:
-//                        loadTables(0);//收件箱被选中
-//                    case 1:
-//                        loadTables(1);//草稿箱被选中
-//                    case 2:
-//                        loadTables(2);//发件箱被选中
-//                    case 3:
-//                        loadTables(3);//已发送被选中
-//                    case 4:
-//                        loadTables(4);//回收站被选中
-//                }
+                switch (index){
+                    case 0:
+                        loadTables(0);//收件箱被选中
+                    case 1:
+                        loadTables(1);//草稿箱被选中
+                    case 2:
+                        loadTables(2);//发件箱被选中
+                    case 3:
+                        loadTables(3);//已发送被选中
+                    case 4:
+                        loadTables(4);//回收站被选中
+                }
             }
 
         });
 
     }
 
-//    public void loadTables(int index){
-//        String[] columnNames1 = {"主题","收件人"};
-//        String[] columnNames2 = {"主题","发件人"};
-//        switch (index){
-//            //收件箱
-//            case 0: {
-//                Object[][] mails = new Object[user.getInbox().size()][2];
-//                int mid=-1;
-//                for(int i = 0;i<user.getInbox().size();i++){
-//                    mails[i][0] = user.getMyInboxMail(uid).get(i).;
-//                }
-//
-//            }
-//
-//            //草稿箱
-//            case 1:{
-//
-//            }
-//
-//            //发件箱
-//            case 2:{
-//
-//            }
-//
-//            //已发送
-//            case 3:{
-//
-//            }
-//
-//            //回收站
-//            case 4:{
-//
-//            }
-//        }
-//    }
+    public void loadTables(int index){
+        String[] columnNames1 = {"主题","收件人"};
+        String[] columnNames2 = {"主题","发件人"};
+        switch (index){
+            //收件箱
+            case 0: {
+                Object[][] mails = new Object[user.getMyInboxMail(uid).size()][2];
+                for(int i = 0;i<user.getMyInboxMail(uid).size();i++){
+                    int mid = user.getMyInboxMail(uid).get(i).getMid();
+                    mails[i][0] = user.getMyInboxMail(uid).get(i).getSubjectById(mid);
+                    mails[i][1] = user.getMyInboxMail(uid).get(i).getToAddrById(mid);
+                    model = new DefaultTableModel(mails,columnNames1);
+                    table_maillist = new JTable(model);
+                    }
+
+            }
+
+            //草稿箱
+            case 1:{
+
+            }
+
+            //发件箱
+            case 2:{
+
+            }
+
+            //已发送
+            case 3:{
+
+            }
+
+            //回收站
+            case 4:{
+
+            }
+        }
+    }
 
     public static void main(String[] args){
 
@@ -131,7 +134,7 @@ public class MainSystem {
 //        frame.setSize(800,600);
 //        frame.setVisible(true);
 
-        MainSystem ms = new MainSystem("Cai");
+//        MainSystem ms = new MainSystem("Cai");
     }
 
 }

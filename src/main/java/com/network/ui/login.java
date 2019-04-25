@@ -13,7 +13,7 @@ public class login {
     private static void manageComponents(JPanel mypanel) {
         mypanel.setLayout(null);
 
-        JLabel userLabel = new JLabel("User: ");
+        JLabel userLabel = new JLabel("用户名：");
         userLabel.setBounds(50, 30, 80, 25);
         mypanel.add(userLabel);
 
@@ -21,7 +21,7 @@ public class login {
         userName.setBounds(150, 30, 165, 25);
         mypanel.add(userName);
 
-        JLabel pwLabel = new JLabel("Password: ");
+        JLabel pwLabel = new JLabel("密码：");
         pwLabel.setBounds(50, 70, 80, 25);
         mypanel.add(pwLabel);
 
@@ -29,7 +29,7 @@ public class login {
         pwContent.setBounds(150, 70, 165, 25);
         mypanel.add(pwContent);
 
-        JLabel smtpLabel = new JLabel("SMTP server address: ");
+        JLabel smtpLabel = new JLabel("SMTP服务器：");
         smtpLabel.setBounds(10, 110, 200, 25);
         mypanel.add(smtpLabel);
 
@@ -37,7 +37,7 @@ public class login {
         smtpAdd.setBounds(150, 110, 165, 25);
         mypanel.add(smtpAdd);
 
-        JLabel pop3Label = new JLabel("POP3 server address: ");
+        JLabel pop3Label = new JLabel("POP3服务器：");
         pop3Label.setBounds(10, 150, 200, 25);
         mypanel.add(pop3Label);
 
@@ -46,7 +46,7 @@ public class login {
         mypanel.add(pop3Add);
 
 
-        JButton login = new JButton("Log in");
+        JButton login = new JButton("登录");
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,18 +56,18 @@ public class login {
                 String pop3_server = pop3Add.getText();
 
                 if(username.isEmpty()){
-                    JOptionPane.showConfirmDialog(mypanel,"Please input your user name!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showConfirmDialog(mypanel,"请输入用户名！","提示",JOptionPane.WARNING_MESSAGE);
                     return;
                 }
 
                 if(password.isEmpty()){
-                    JOptionPane.showConfirmDialog(mypanel,"Please input your password!","Warning",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showConfirmDialog(mypanel,"请输入密码！","提示",JOptionPane.WARNING_MESSAGE);
                     return;
 
                 }
 
                 if(smtp_server.isEmpty() || pop3_server.isEmpty()) {
-                    JOptionPane.showConfirmDialog(mypanel, "Please input at least one server address!", "Warning", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showConfirmDialog(mypanel, "请输入服务器地址！", "提示", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
 
@@ -78,7 +78,7 @@ public class login {
                         System.out.println("local user login successfully");
 
                         JFrame frame = new JFrame("邮箱系统");
-                        frame.setContentPane(new MainSystem(username).getPanel1());
+                        frame.setContentPane(new MainSystem(username,smtp_server,pop3_server).getPanel1());
                         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                         frame.pack();
                         frame.setSize(800,600);
